@@ -35,3 +35,4 @@ Route::group(['middleware'=>['auth']], function(){
 });
 Auth::routes();
 
+Route::any('register', function(){ return abort(404); });
